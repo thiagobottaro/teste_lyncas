@@ -1,0 +1,39 @@
+Como participar?
+
+Faça um clone deste repositório.
+Quando estiver finalizado a prova, compartilhe seu código no seu Git de preferência e nos envie para o e-mail que consta ao final desse documento.
+Faremos nossa análise e te daremos um retorno.
+
+
+Detalhes da prova
+
+Critérios analisados
+
+Arquitetura do projeto (camadas)
+Aplicação de orientação a objeto
+Funcionalidades e funcionamento
+
+
+O que você deve desenvolver
+
+A prova consiste em criar uma interface Web para interação com o Google books.
+Seu projeto deve também conter um arquivo README com a explicação das tecnologias utilizadas e as instruções para rodar.
+Descrever suas dificuldades e facilidades, bem como o número de horas de desenvolvimento.
+A comunicação com o Google Books API deve ser feita utilizando um HttpClient padrão, feito na mão e sem o uso de qualquer library.
+O Google Books API é aberto e não requer nenhuam autenticação.
+
+
+Funcionalidades
+A App deve conter as seguintes funcionalidades:
+São 2 menus: Pesquisa, Meus favoritos
+
+Pesquisar livros no Google books e exibir em tela (com a foto e descrição resumida)
+Salvar livros em uma lista de "meus favoritos" (localmente na base escolhida)
+Listar e excluir livros favoritos
+Exibir alerta de confirmaçao de exclusão
+
+
+Especificações técnicas
+
+O App deve se comunicar com o Google Books API pelo backend .Net e não fazer uso de nenhuma lib
+Você pode optar pelo padrão MVC ou Front-end separado.

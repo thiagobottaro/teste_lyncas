@@ -1,0 +1,45 @@
+<!DOCTYPE hml>
+<html>
+    <head>
+        <title></title>
+        <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    </head>
+    <body>        
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pesquisa.html">Pesquisar</a></li>
+                <li><a href="favoritos.php?acao=LIST">Favoritos</a></li>
+            </ul>
+        </nav>
+        
+        <div class="container">
+            <h1 id="title" class="text-center mt-5">Pesquisa de Livros</h1>
+            <div class="row">
+                <div id="input" class="input-group mx-auto col-lg-6 col-md-8 col-sm-12">
+                    <input id="search-box" type="text" class="form-control" placeholder="Search Books!" value="clarice lispector">
+                    <button id="search" class="btn btn-primary" onclick=""> Pesquisar</button>
+                </div>
+            </div>
+
+            <form method='post' action="favoritos.php"  enctype="multipart/form-data">
+                <input type='hidden' name='acao' value="cad" />            
+            <div class="book-list">                
+                <h2 class="text-center">Resultado da Pesquisa</h2>
+                <h3 id="title" class="text-center mt-5">Marque os livros e no final da pagina clique para adicionar aos favoritos</h3>
+                <div id="list-output" class="">
+                    <div class="row">
+                        <!-- card -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="submit" name="cadastre" value="Adicionar ao Menu de Favoritos">
+        <br /><br /><br />
+        </form>
+
+        <script src="js/jquery-3.1.0.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/app.js"></script>
+    </body>
+</html>
